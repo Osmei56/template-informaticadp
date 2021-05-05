@@ -6,7 +6,7 @@
     :expand-on-hover="expandOnHover"
     :right="$vuetify.rtl"
     :src="barImage"
-    mobile-break-point="960"
+    mobile-breakpoint="960"
     app
     width="260"
     v-bind="$attrs"
@@ -38,7 +38,7 @@
 
         <v-list-item-content>
           <v-list-item-title
-            class="display-1"
+            class="text-h4"
             v-text="profile.title"
           />
         </v-list-item-content>
@@ -110,6 +110,11 @@
           icon: 'mdi-view-dashboard',
           title: 'dashboard',
           to: '/',
+        },
+        {
+          icon: 'mdi-message-text',
+          title: 'Articulos',
+          to: '/articulos',
         },
         {
           icon: 'mdi-account',
